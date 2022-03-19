@@ -1,0 +1,25 @@
+#+TITLE: Control Backround
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-16 Wed>
+
+* Introduction.
+Most background control is used for making button and we can make it for container control.
+
+* Usage in Button
+If we want to make button we make an anchor to our website, then make the background CSS.
+
+#+begin_example html
+<a class="button" href="www.gnu.org"> Vist GNU website </a>
+#+end_example
+
+in CSS we make the style for this button.
+#+begin_example css
+.button{
+    background-color: blue;
+    padding: 20px; /* to increase padding*/
+    border-radius: 5px; /* to make modren style of button */
+    border: 1px solid black;
+    text-decoration: none;
+    }
+    #+end_example

@@ -1,0 +1,14 @@
+#+TITLE: Use Style Css in HTML Tags.
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-13 Sun>
+
+* Introduction
+In Css you can put spesific attribute in one tags. if you want to write the tags with Css attribute.
+
+* Usage:
+If you want give tags attribute's style by /style/ attribute.
+
+#+begin_example html
+<a style="Background-color: red; color:white;"> the link </a>
+#+end_example

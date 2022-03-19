@@ -1,0 +1,11 @@
+#+TITLE: Router Components
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-19 Sat>
+
+* Router Components
+/Router/ is a device which represent link and manage *network*.
+
+Router have componenet as following:
+
+    - Processor:

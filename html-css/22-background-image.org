@@ -1,0 +1,86 @@
+#+TITLE: How Make Image Background
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-17 Thu>
+
+
+* Introduction
+You can use background.
+
+* Usage
+
+** background-color
+The /background-color/ property specifies the background color of an element.
+
+With CSS, a color is most often specified by:
+    - a valid color name - like "red"
+    - a HEX value - like "#ff0000"
+    - an RGB value - like "rgb(255,0,0)"
+
+#+begin_example css
+background-color: gray;
+#+end_example
+
+** background-image
+The /background-image/ property specifies an image to use as the background of an element.
+By default, the image is repeated so it covers the entire element.
+
+#+begin_example css
+background-image:url(pathOfImage.jpg);
+#+end_example
+
+** background-size
+The /background-size/ property specifies the size of the background images.
+
+There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the image (height becomes "auto"), the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma).
+
+
+#+begin_example css
+background-size: cover;
+#+end_example
+
+| Proprties | Discrib.                                                                                                                                |
+|-----------+-----------------------------------------------------------------------------------------------------------------------------------------|
+| auto      | Default value. The background image is displayed in its original size                                                                   |
+|           |                                                                                                                                         |
+| Default   | Sets the width and height of the background image in percent of the parent element.                                                     |
+|           | The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"               |
+|           |                                                                                                                                         |
+| cover     | Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges |
+|           |                                                                                                                                         |
+| contain   | Resize the background image to make sure the image is fully visible                                                                     |
+|           |                                                                                                                                         |
+|-----------+-----------------------------------------------------------------------------------------------------------------------------------------|
+
+
+** background-repeat
+
+By default, the /background-image/ property repeats an image both horizontally and vertically. Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+
+#+begin_example css
+body {
+  background-image: url("gradient_bg.png");
+}
+#+end_example
+
+If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:
+
+#+begin_example css
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+#+end_example
+
+** background-position
+
+#+begin_example css
+background-position: top left;
+#+end_example
+
+** background-attachment
+The /background-attachment/ property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+#+begin_example css
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+#+end_example

@@ -1,0 +1,143 @@
+#+TITLE: How Control The Element
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-13 Sun>
+
+* Introduction
+we can control the place of the tags in the page.
+
+* Usage
+We can control the place of tags by the folloing proprities:
+
+** using float
+The CSS /float/ property specifies how an element should float.
+
+The /float/ property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The /float/ property can have one of the following values:
+
+| Proprity | discrib.                                                                                         |
+|----------+--------------------------------------------------------------------------------------------------|
+| left     | The element floats to the left of its container                                                  |
+|          |                                                                                                  |
+| right    | The element floats to the right of its container                                                 |
+|          |                                                                                                  |
+| none     | The element does not float (will be displayed just where it occurs in the text). This is default |
+|          |                                                                                                  |
+| inherit  | The element inherits the float value of its parent                                               |
+|          |                                                                                                  |
+|----------+--------------------------------------------------------------------------------------------------|
+
+
+for example
+
+In its simplest use, the float property can be used to wrap text around images.
+
+#+begin_example css
+/*make image float in the right. */
+img {
+  float: right;
+}
+#+end_example
+
+
+
+** using clear
+The CSS /clear/ property specifies what elements can float beside the cleared element and on which side.
+
+When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property. The clear property specifies what should happen with the element that is next to a floating element.
+
+The clear property can have one of the following values:
+
+| Proprity | Discrib.                                                                        |
+|----------+---------------------------------------------------------------------------------|
+| none     | The element is not pushed below left or right floated elements. This is default |
+|          |                                                                                 |
+| left     | The element is pushed below left floated elements                               |
+|          |                                                                                 |
+| right    | The element is pushed below right floated elements                              |
+|          |                                                                                 |
+| both     | The element is pushed below both left and right floated elements                |
+|          |                                                                                 |
+| inherit  | The element inherits the clear value from its parent                            |
+|          |                                                                                 |
+|----------+---------------------------------------------------------------------------------|
+
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+Example
+This example clears the float to the left. Here, it means that the <div2> element is pushed below the left floated <div1> element:
+
+#+begin_example css
+div1 {
+  float: left;
+}
+
+div2 {
+  clear: left;
+}
+#+end_example
+
+*** The clearfix Hack
+If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+
+#+begin_example css
+.clearfix {
+  overflow: auto;
+}
+#+end_example
+
+
+
+** using position
+The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+
+| Proprity | Discrib                                                                                                                           |
+|----------+-----------------------------------------------------------------------------------------------------------------------------------|
+| static   | Default value. Elements render in order, as they appear in the document flow                                                      |
+|          |                                                                                                                                   |
+| absolute | The element is positioned relative to its first positioned (not static) ancestor element                                          |
+|          |                                                                                                                                   |
+| fixed    | The element is positioned relative to the browser window                                                                          |
+|          |                                                                                                                                   |
+| relative | The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position           |
+|          |                                                                                                                                   |
+| sticky   | The element is positioned based on the user's scroll position                                                                     |
+|          | A sticky element toggles between /relative/ and /fixed/, depending on the scroll position.                                        |
+|          | It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). |
+|          | *Note*: Not supported in IE/Edge 15 or earlier. Supported in Safari from version 6.1 with a -webkit- prefix.                      |
+|          |                                                                                                                                   |
+| initial  | Sets this property to its default value.                                                                                          |
+|          |                                                                                                                                   |
+| inherit  | Inherits this property from its parent element.                                                                                   |
+|----------+-----------------------------------------------------------------------------------------------------------------------------------|
+
+
+
+
+
+** using bottom
+The /bottom/ property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
+
+    - If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.
+    - If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.
+    - If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.
+    - If position: static; - the bottom property has no effect.
+
+| property | Discrib                                                                               |
+|----------+---------------------------------------------------------------------------------------|
+| auto     | Lets the browser calculate the bottom edge position. This is default                  |
+|          |                                                                                       |
+| length   | Sets the bottom edge position in px, cm, etc. Negative values are allowed.            |
+|          |                                                                                       |
+| %        | Sets the bottom edge position in % of containing element. Negative values are allowed |
+|          |                                                                                       |
+| initial  | Sets this property to its default value.                                              |
+|          |                                                                                       |
+| inherit  | Inherits this property from its parent element. Read about inherit                    |
+|          |                                                                                       |
+|----------+---------------------------------------------------------------------------------------|
+
+top
+right
+left

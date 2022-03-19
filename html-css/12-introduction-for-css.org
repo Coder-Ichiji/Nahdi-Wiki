@@ -1,0 +1,39 @@
+#+TITLE: Introduction for CSS
+#+Author: Mohammed K Alnahdi
+#+Date: 2022 MAR 09 Wed
+
+* What is CSS
+  - CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+  - CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+  - External stylesheets are stored in CSS files.
+** What is The Diffrent
+In HTML, the attributes is not always supporting with all version browsers. Instead CSS, you can make stylesheets for HTML elements.
+* Usage
+To use Css in your website, you can write it inside HTML file or make exrnal file.
+** To Use it inside HTML
+inside /head/ tag, you can open tag calles : /style/ .
+
+#+begin_example html
+<html>
+    <head>
+    ....
+        <style>
+        ....
+        </style>
+    ....
+    </head>
+....
+#+end_example
+
+** To Use at extirnal file
+Inside /head/ tag, you can and this tage.
+
+#+begin_example html
+<html>
+    <head>
+    ....
+          <link rel="stylesheet" href="styles.css">
+    ....
+    </head>
+....
+#+end_example

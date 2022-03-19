@@ -1,0 +1,35 @@
+#+TITLE: Control Fonts
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-16 Wed>
+
+* Introduction
+You can use /font/ tags but also you can control all fonts via Css. The control use /font-family/, /font-size/, and everything start font. there are control tools starting with text.
+
+* Usage
+You can control font by:
+
+** Using /font/ starting propaties.
+
+here the example
+
+#+begin_example css
+.example{
+    font-family: Arial;
+    font-size: 40px;
+    font-width: bold; /* You can use px*/
+    }
+#+end_example
+** Using /text/ starting propaties
+
+here the example:
+
+#+begin_example css
+.example{
+    text-decoration: rtl;
+    text-transform: Uppercase;
+    }
+    #+end_example
+
+*** Note:
+you can change the color fonts by using /color/ propaty and value will be in HixaDecimal.

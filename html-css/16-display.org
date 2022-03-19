@@ -1,0 +1,16 @@
+#+TITLE: How To Use Display in Browser.
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-13 Sun>
+
+* Introduction
+Depends on file 15, you can use use Display button to see all behavior for element.
+
+* Usage
+To see Display Behavior follow the step below.
+** Step One: Inspect the code.
+Choose your element from page the want to find its /display/ by clicking right in mouse and clicking inspect.
+** Step Two: Find its Display
+Some browser mentioned in the toolkit as *Display* and some of them ar mentioning as *Computing*.
+** Step Three: Change the Behavior.
+To change it choose the how want to mention this element display.

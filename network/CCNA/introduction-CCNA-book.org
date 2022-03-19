@@ -1,0 +1,6 @@
+#+TITLE: Introduction in CCNA course
+#+Author: Mohammed K Alnahdi
+#+email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-19 Sat>
+
+* Prefection
