@@ -9,3 +9,46 @@
 Router have componenet as following:
 
     - Processor:
+      The /Processor/ is CPU (Center Process Unite) that handle tasks into router.
+    - Memories:
+      The /Memory/ is a place that save and restoer the programs or ~settings~.
+    - Ports:
+      The /Ports/ is a place for plugging ethernet or wires.
+    - Power-Supply:
+      The /Power/ caple that make router ON.
+
+**Note**
+As we see in the componenet, we will find the router is small computer that handle networks.
+
+** Processor CPU
+
+** Memories
+There is kind of memories inside router and this memories as following:
+
+*** RAM
+
+*** ROM
+
+*** Flash Memory
+
+*** NVRAM
+
+** Ports
+In /Ports/, we can defined it in common router ports found:
+
+*** Console Ports
+This is the port specialized in making the special setup in the router. A cable called Console is connected to this The port is then connected from the other end to the computer so that we can enter the router and work The counter and programming of the router This port is also available on the Switch.
+
+*** Auxiliary Ports
+This port is used to set up the device as well, but remotely, meaning the router must be connected On the Internet to be logged in and make settings remotely from another place.
+
+*** LAN Interface Ports
+This port is intended for internal networks only. It is used to connect different networks in close proximity to each other, meaning within borders company.
+
+*** ًِWAN Interface Ports (Serial Ports)
+This port is intended to connect networks in each other that are between countries and remote and is used Also, to connect the branches of companies in each other so that you can form a network between them.
+In additional, the cables that link
+    - ‫‪Equipment‬‬ ‫‪Communication‬‬ ‫‪Data‬‬ ‫=‬ ‫‪DCE‬‬
+    - ‫‪Equipment‬‬ ‫‪Terminal‬‬ ‫‪Data‬‬ ‫=‬ ‫‪DTE‬‬
+
+Serial cable: This cable is used to connect between branches or routers containing serial cards One end is called (DCE) and the other end (DTE), and sometimes the router is connected to the frame device Realistic switch such as Cisco (2522) via the same cable. Cable (DCE/DTE) is used Mainly in Cisco laboratories.

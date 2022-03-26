@@ -1,0 +1,68 @@
+#+TITLE: Getting Starting Doom Emacs
+#+Author: Mohammed K Alnahdi
+#+Email: mohammed.alnahdi1991@gmail.com
+#+Date: <2022-03-26 Sat>
+
+* Introduction
+/Doom Emacs/ is GNU Emacs with spicial configuration that make Emacs fast, good looking, and easy to customize. /Doom/ has build with Evil Mode (*VI* and *VIM*) that easy for VIM Users.
+
+Emacs support Emacs 25.1 or higher and created by Henrik Lissner.
+
+* Installing Doom Emacs
+To get /Doom Emacs/ must have Emacs. Most distrbution in GNU Linux have Emacs in them repository. In Void Linux installing such as following:
+
+#+begin_example bash
+sudo xbps-install emacs-gtk3
+#+end_example
+
+*Note*: There are defferent between emacs, emacs-gtk2, and emacs-gtk3.
+| package    | Description                                       |
+|------------+---------------------------------------------------|
+| emacs      | Pure Emacs that only worked into terminal         |
+| emacs-gtk2 | Emacs that worked into frame build in GTK+2.      |
+| emacs-gtk3 | Emacs that worked also into frame build in GTK+3. |
+
+Then you need some packages to start using emacs. This package is depincy for /Doom Emacs/ and all you need  (git, ripgrep, fd)
+
+| Package | Description                                        |
+|---------+----------------------------------------------------|
+| git     | Git Tree Histroy Storage Tool                      |
+| ripgrep | Fast Search Tool Inspired By ag and grep           |
+| fd      | Simple, fast and user-friendly alternative to find |
+
+#+begin_example bash
+sudo xbps-install git ripgrep fd
+#+end_example
+
+Finally cloan /Doom Emacs/ from Henrik Lissner [[https://github.com/hlissner/doom-emacs][repository]] by following command:
+
+#+begin_example bash
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+#+end_example
+
+then install it by command:
+
+#+begin_example bash
+~/.emacs.d/bin/doom install
+#+end_example
+
+* Configuration Files
+You will find configuration files on directory ~/doom.d/ and it is just three files:
+
+** init.el
+This file controls what Doom modules are enabled and what order they load in. Remember to run 'doom sync' after mdifying this file.
+** config.el
+Place your private configuration here. Remember, you do not need to run 'doom sync' after modifying this file.
+** package.el
+To install a package with /Doom Emacs/ you must declate them here and run 'doom sync' on the command line. then restart emacs for the changes to take effect.
+
+* Doom Command
+You need some command in /Doom Emacs/ that showen in below:
+
+| Command      | Description                                                                                                                                  |
+|--------------+----------------------------------------------------------------------------------------------------------------------------------------------|
+| doom sync    | to synchronize your private config with Doom by installing missing packages, removing orphaned packages, and regenerating caches.            |
+| doom upgrade | to update Doom to the latest release & all installed packages.                                                                               |
+| doom doctor  | to diagnose common issues with your system and config.                                                                                       |
+| doom env     | to dump a snapshot of your shell environment to a file that Doom will load at startup. This allows to inherit your PATH, among other things. |
+| doom build   | to recompile all installed packages (use this if you up/downgrade Emacs).                                                                    |
